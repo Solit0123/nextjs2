@@ -33,7 +33,8 @@ export async function getStaticPaths() {
       fallback: 'blocking'
     }
 }
-
+//fallback true = run to load that page. 
+// false = error 404 page 
 
 //i need to learn this wtf???? 
 export async function getStaticProps(context) {
