@@ -33,6 +33,8 @@ export async function getStaticPaths() {
       fallback: 'blocking'
     }
 }
+//path is for next to know all paths
+//params is so that i can grab the context.params.id in Props
 //fallback true = run to load that page. 
 // false = error 404 page 
 
@@ -53,8 +55,6 @@ if (!data) {
     notFound: true,
   }
 }
-
-
 
 if (!data2) {
   return {
